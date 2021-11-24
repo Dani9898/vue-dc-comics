@@ -3,7 +3,7 @@
 
       <section id="footer-buy">
         <div class="buy-comics" v-for="activity, i in activitiesBuy" :key="i">
-          <img :src="activity.img" :alt="activity.text">
+          <img :src="require(`../assets/img/${activity.img}`)" :alt="activity.text">
           <span>{{activity.text}}</span>
         </div>
       </section>
@@ -15,7 +15,7 @@
               <h3>DC COMICS</h3>
             <ul>
               <li>Characters</li>
-              <li>Comics</li>
+              <li>0Comics</li>
               <li>Movies</li>
               <li>TV</li>
               <li>Games</li>
@@ -68,7 +68,7 @@
         <div class="sign-up">SIGN-UP NOW!</div>
         <div class="socials">
           <span>FOLLOW US</span>
-          <img v-for="social, i in socials" :key="i" :src="social">
+          <img v-for="social, i in socials" :key="i" :src="require(`../assets/img/${social}`)">
         </div>
       </section>
 
@@ -82,27 +82,27 @@ export default {
     return {
       activitiesBuy: [
         {
-          img: "../assets/img/buy-comics-digital-comics.png",
+          img: "buy-comics-digital-comics.png",
           text: "DIGITAL COMICS"
         },
         {
-          img: "../assets/img/buy-comics-merchandise.png",
+          img: "buy-comics-merchandise.png",
           text: "DC MERCHANDISE"
         },
         {
-          img: "../assets/img/buy-comics-subscriptions.png",
+          img: "buy-comics-subscriptions.png",
           text: "SUBSCRIPTION"
         },
         {
-          img: "../assets/img/buy-comics-shop-locator.png",
+          img: "buy-comics-shop-locator.png",
           text: "COMIC SHOP LOCATOR"
         },
         {
-          img: "../assets/img/buy-dc-power-visa.svg",
+          img: "buy-dc-power-visa.svg",
           text: "DC POWER VISA"
         }
       ],
-      socials: ["../assets/img/footer-facebook.png", "../assets/img/footer-twitter.png", "../assets/img/footer-youtube.png", "../assets/img/footer-pinterest.png", "../assets/img/footer-periscope.png"]
+      socials: ["footer-facebook.png", "footer-twitter.png", "footer-youtube.png", "footer-pinterest.png", "footer-periscope.png"]
     }
   }
 }
@@ -119,12 +119,19 @@ export default {
     .buy-comics {
       display: flex;
       align-items: center;
-      margin: 0 10px;
+      margin: 0 30px;
+        img {
+          width: 50px;
+        }
+        
+        span {
+          margin-left: 15px;
+        }
     }
 }
 
 #footer-menu {
-  background-image: url("../assets/img/footer-bg.jpg");
+  // background-image: url("../../assets/img/footer-bg.jpg");
   display: flex;
   justify-content: space-around;
 
@@ -173,12 +180,21 @@ export default {
     .sign-up {
       padding: 10px 20px;
       color: #fff;
-      border: 1px solid #0282f9;
+      border: 2px solid #0282f9;
     }
 
     .socials {
       color: #0282f9;
       font-size: 20px;
+      display: flex;
+      align-items: center;
+        span {
+          margin-right: 20px;
+        }
+        
+        img {
+          margin: 0 10px;
+        }
     }
 }
 </style>
