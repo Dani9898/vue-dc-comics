@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-
+    <Header/>
+    <ContenutoPrincipale/>
+    <Footer/>
   </div>
 </template>
 
@@ -20,5 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+body {
+  background-color: #1c1c1c;
+}
 </style>
