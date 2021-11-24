@@ -1,7 +1,7 @@
 <template>
     <header>
-      <!-- <img src="..assets/img/dc-logo.png" alt=""> -->
-      <div class="header-img"></div>
+      
+      <img src="../assets/img/dc-logo.png" alt="">
       <nav>
         <ul>
           <li :class= "voceMenu.active ? 'active' : '' " v-for="voceMenu, i in vociMenuHeader" :key="i">{{voceMenu.text}}</li>
@@ -81,11 +81,5 @@ export default {
             color: #0282f9;
           }
       }
-  }
-
-  .header-img {
-    background: red;
-    width: 100px;
-    height: 100px;
   }
 </style>

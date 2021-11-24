@@ -22,6 +22,13 @@ export default {
 </script>
 
 <style lang="scss">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #1c1c1c;
 }
