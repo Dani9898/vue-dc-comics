@@ -86,6 +86,7 @@ export default {
         a {
           text-decoration: none;
           padding-bottom: 48px;
+          color: black;
         }
       }
   }

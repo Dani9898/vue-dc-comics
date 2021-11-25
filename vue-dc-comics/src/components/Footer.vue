@@ -134,6 +134,7 @@ export default {
   background-image: url("../assets/img/footer-bg.jpg");
   display: flex;
   justify-content: space-around;
+  height: 400px;
 
     nav {
       padding: 45px 0;
@@ -164,7 +165,7 @@ export default {
 #logo-footer {
   img {
     width: 600px;
-    height: 375px;
+    height: 100%;
     object-fit: none;
   }
 
