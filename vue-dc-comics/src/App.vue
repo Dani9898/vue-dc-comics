@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header/>
+    <Jumbotron/>
     <ContenutoPrincipale/>
     <Footer/>
   </div>
@@ -8,6 +9,7 @@
 
 <script>
 import Header from './components/Header.vue'
+import Jumbotron from './components/Jumbotron.vue'
 import ContenutoPrincipale from './components/ContenutoPrincipale.vue'
 import Footer from './components/Footer.vue'
 
@@ -15,6 +17,7 @@ export default {
   name: 'App',
   components: {
     Header,
+    Jumbotron,
     ContenutoPrincipale,
     Footer
   }

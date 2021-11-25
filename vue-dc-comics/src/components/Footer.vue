@@ -131,7 +131,7 @@ export default {
 }
 
 #footer-menu {
-  // background-image: url("../../assets/img/footer-bg.jpg");
+  background-image: url("../assets/img/footer-bg.jpg");
   display: flex;
   justify-content: space-around;
 
