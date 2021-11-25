@@ -1,11 +1,13 @@
 <template>
     <div id="container">
 
-      div#
+      <div id="current-series">CURRENT SERIES</div>
+
       <SerieCard v-for="serie, i in series" :key="i"
       :details="serie"
       />
       
+      <div id="btn-more">LOAD MORE</div>
     </div>
 </template>
 
@@ -107,6 +109,23 @@ export default {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
 
+#current-series {
+  background-color: #0282f9;
+  color: #fff;
+  padding: 20px 30px;
+  position: absolute;
+  top: -29px;
+  left: 0px;
+}
+
+#btn-more {
+  margin: 30px auto;
+  color: white;
+  font-size: 22px;
+  background-color: #0282f9;
+  padding: 10px 55px;
 }
 </style>

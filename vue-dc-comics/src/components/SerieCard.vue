@@ -26,7 +26,7 @@ export default {
 
 .serie {
     color: #fff;
-    margin: 30px 0;
+    margin-top: 55px;
     width: calc(100% / 6);
     padding: 0 20px;
         
